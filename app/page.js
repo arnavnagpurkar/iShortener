@@ -29,7 +29,7 @@ export default function Home() {
       <div className="container lg:w-3/4 mx-auto my-6">
         <div className="border border-white main-heading lg:w-[70%] w-[90%] p-8 mt-14">
           <h1 className="lg:text-7xl text-4xl font-semibold">
-            Shorten All Your Links with <span className="font-extrabold">"iShortner"</span>
+            Shorten All Your Links with <span className="font-extrabold">"iShortener"</span>
           </h1>
         </div>
         <div className="border border-white details lg:w-[70%] w-[90%] p-8 my-5">

@@ -9,3 +9,7 @@ const Features = () => {
 }
 
 export default Features
+export const metadata = {
+    title: "Features - iShortener | Arnav Nagpurkar",
+    description: "Features Page of iShortner",
+};

@@ -9,3 +9,7 @@ const About = () => {
 }
 
 export default About
+export const metadata = {
+  title: "About - iShortener | Arnav Nagpurkar",
+  description: "Features Page of iShortner",
+};

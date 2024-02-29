@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "iShortner | Arnav Nagpurkar",
+  title: "iShortener | Arnav Nagpurkar",
   description: "iShortner is a link shortner created by Arnav Nagpurkar and is a open source app.",
 };
 
