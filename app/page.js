@@ -1,28 +1,19 @@
 "use client"
 import Link from "next/link";
-import { useState } from "react";
+import { handleSubmit } from "@/actions/handle-link";
+import { useRef, useState } from "react";
 
 export default function Home() {
-  const [originalLink, setOriginalLink] = useState("");
+  const ref = useRef();
+  const [shortenedLink, setShortenedLink] = useState(null)
 
-  const handleSubmit = async (e) => {
-    const response = await fetch("/api/handle-link", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ originalLink })
-    });
-
-    response.json()
-      .then(data => {
-        console.log(data);
-      })
-  }
-
-  const handleinpChange = (e) => {
-    setOriginalLink(e.target.value);
-  }
+  const submitForm = async (e) => {
+    e.preventDefault();
+    const response = await handleSubmit(ref.current.link.value);
+    console.log(response) // was supposed to be the shortened link, but as project is not completes returns the link is valid or not, will be updated when the logic will be written and then the shortened url will be returned here and then passed to variable "shortenedLink" and the UI changes would be made
+    setShortenedLink(response);
+    ref.current.reset();
+  };
 
   return (
     <>
@@ -39,9 +30,9 @@ export default function Home() {
           <Link href="" className="bg-teal-400 hover:bg-teal-500 text-black hover:text-white transition-all text-md font-semibold px-7 py-4 rounded-full">Get Started</Link>
         </div>
         <div className="shortern-form">
-          <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Enter a link" value={originalLink} onChange={handleinpChange} className="text-black" />
-            <button type="submit">Shortern It</button>
+          <form ref={ref} onSubmit={submitForm} className="lg:w-[85%] w-full border border-white py-12 px-10 my-8 flex gap-8 justify-between">
+            <input type="text" placeholder="Enter a link" name="link" id="link" className="text-black px-4 py-5 text-md font-semibold w-full rounded-xl" />
+            <button type="submit" className="lg:min-w-44 min-w-36 bg-teal-400 hover:bg-teal-500 text-black hover:text-white transition-all text-lg font-semibold lg:px-7 px-5 lg:py-4 py-2 rounded-full">Shortern It</button>
           </form>
         </div>
       </div>
