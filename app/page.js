@@ -90,7 +90,7 @@ export default function Home() {
       </div>
       <div className="message-container">
         {errorMessage &&
-          <div id="error-msg" className="border-2 rounded-sm border-red-700 bg-red-400 lg:w-[85%] w-full mx-1 my-4 px-5 py-7 font-semibold text-lg flex justify-between">
+          <div id="error-msg" className="border-2 rounded-sm border-red-700 bg-red-400 lg:w-[85%] w-full mx-1 my-4 px-5 py-7 font-semibold text-lg flex justify-between mb-16">
             <div>{errorMessage}</div>
             <button onClick={handleRemoveInvalidMsg}>
               <Image
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
         }
         {shortenedLink &&
-          <div id="shortened-link" className="border-2 rounded-lg border-zinc-700 bg-zinc-700 lg:w-[85%] w-full my-4 px-5 py-7 font-semibold text-lg flex justify-between items-center">
+          <div id="shortened-link" className="border-2 rounded-lg border-zinc-700 bg-zinc-700 lg:w-[85%] w-full my-4 px-5 py-7 font-semibold text-lg flex justify-between items-center mb-16">
             <div>
               <span className="font-normal">Shortened Link :- </span>
               <Link href={shortenedLink} target="_blank" className="text-blue-500 hover:text-blue-600 transition-all">
