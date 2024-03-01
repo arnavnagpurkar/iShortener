@@ -11,11 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-zinc-900 text-white">
-        <Navbar />
-        <div className="container lg:w-3/4 mx-auto my-6">
+          <Navbar />
+        <div className="container lg:w-3/4 mx-auto my-6 mb-0 min-h-[75vh]">
           {children}
         </div>
-        <Footer />
+          <Footer />
       </body>
     </html>
   );

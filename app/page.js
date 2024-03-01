@@ -46,7 +46,7 @@ export default function Home() {
     <>
       <div className="main-heading lg:w-[70%] w-[90%] p-8 mt-14">
         <h1 className="lg:text-7xl text-4xl font-semibold">
-          Shorten All Your Links with{" "}
+          Shorten All Your Links with
           <span className="font-extrabold">&quot;iShortener&quot;</span>
         </h1>
       </div>
