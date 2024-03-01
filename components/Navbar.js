@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <nav className='flex border border-white py-9 px-5 lg:w-3/4 mx-auto my-3 justify-between'>
+    <nav className='flex py-9 px-5 lg:w-3/4 mx-auto my-3 justify-between'>
       <div className="logo lg:text-4xl text-2xl font-bold">
         <Link href="/">iShortener</Link>
       </div>

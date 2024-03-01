@@ -12,8 +12,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-zinc-900 text-white">
         <Navbar />
-        {children}
-        {/* <Footer /> */}
+        <div className="container lg:w-3/4 mx-auto my-6">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
