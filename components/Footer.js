@@ -25,9 +25,11 @@ const Footer = () => {
         </ul>
       </div>
       <div className="text mt-3 flex justify-between">
-        <div>&copy; Created in 2024 by <Link href="https://github.com/arnavnagpurkar" target="_blank" className="text-blue-500 hover:text-blue-400 transition-all">arnavnagpurkar</Link>
+        <div>&copy; Created in 2024 by&nbsp;
+          <Link href="https://github.com/arnavnagpurkar" target="_blank" className="text-blue-500 hover:text-blue-400 transition-all">
+            arnavnagpurkar
+          </Link>
         </div>
-        <div>|</div>
         <div>
           &copy; iShortener - All Rights Reserved
         </div>
