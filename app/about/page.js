@@ -16,7 +16,7 @@ const About = () => {
               Whether you&apos;re sharing links on social media, sending emails, or communicating through messages, iShortener helps you create concise and manageable URLs that are easy to share and remember.
             </p>
             <p className="mx-3 my-4">
-              Our service prioritizes simplicity and speed, allowing you to shorten URLs instantly without any unnecessary steps or registrations. Just paste your link, click a button, and you're ready to share your shortened URL with the world.
+              Our service prioritizes simplicity and speed, allowing you to shorten URLs instantly without any unnecessary steps or registrations. Just paste your link, click a button, and you&apos;re ready to share your shortened URL with the world.
             </p>
             <p className="mx-3 my-4">
               We understand the importance of security and privacy, which is why iShortener employs advanced encryption techniques to safeguard your data. You can trust us to protect your information and ensure the integrity of your shortened links.
