@@ -22,13 +22,16 @@ const About = () => {
               We understand the importance of security and privacy, which is why iShortener employs advanced encryption techniques to safeguard your data. You can trust us to protect your information and ensure the integrity of your shortened links.
             </p>
             <p className="mx-3 my-4">
-              iShortener is an open-source project created by&nbsp;<a href="https://github.com/arnavnagpurkar" target="_blank" className="text-blue-500 hover:text-blue-400 transition-all">Arnav Nagpurkar</a>. It is built using Next.js and Tailwind CSS, leveraging the power of modern web technologies to provide a seamless and efficient URL shortening experience.
+              iShortener is an open-source project created by&nbsp;
+              <a href="https://github.com/arnavnagpurkar" target="_blank" className="text-blue-500 hover:text-blue-400 transition-all">Arnav Nagpurkar</a>.
+              It is built using Next.js and Tailwind CSS, leveraging the power of modern web technologies to provide a seamless and efficient URL shortening experience.
             </p>
             <p className="mx-3 my-4">
-              You can contribute to its development or report issues on&nbsp;<Link href="https://github.com/arnavnagpurkar/iShortener" target="_blank" className="text-blue-500 hover:text-blue-400 transition-all">GitHub</a>.
+              You can contribute to its development or report issues on&nbsp;
+              <Link href="https://github.com/arnavnagpurkar/iShortener" target="_blank" className="text-blue-500 hover:text-blue-400 transition-all">GitHub</Link>.
             </p>
             <p className='mx-3 my-4'>
-              Thank you for choosing iShortener. We're dedicated to providing you with the best URL shortening experience possible, and we appreciate your support.
+              Thank you for choosing iShortener. We&apos;re dedicated to providing you with the best URL shortening experience possible, and we appreciate your support.
             </p>
           </div>
         </div>
