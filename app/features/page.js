@@ -1,6 +1,6 @@
 import FeatureCard from "@/components/FeatureCard";
 
-export default function FeaturesPage() {
+export  const FeaturesPage = () => {
   return (
     <div className="py-8">
       <div className="container mx-auto">
@@ -35,3 +35,8 @@ export default function FeaturesPage() {
     </div>
   );
 }
+export default FeaturesPage;
+export const metadata = {
+  title: "Features - iShortener | Arnav Nagpurkar",
+  description: "Features Page of iShortner",
+};
