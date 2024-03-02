@@ -13,7 +13,7 @@ const About = () => {
           </div>
           <div className="text-lg">
             <p className="mx-3 my-4">
-              Whether you're sharing links on social media, sending emails, or communicating through messages, iShortener helps you create concise and manageable URLs that are easy to share and remember.
+              Whether you&apos;re sharing links on social media, sending emails, or communicating through messages, iShortener helps you create concise and manageable URLs that are easy to share and remember.
             </p>
             <p className="mx-3 my-4">
               Our service prioritizes simplicity and speed, allowing you to shorten URLs instantly without any unnecessary steps or registrations. Just paste your link, click a button, and you're ready to share your shortened URL with the world.
