@@ -26,16 +26,25 @@ To run the iShortener project locally, follow these steps:
     git clone https://github.com/arnavnagpurkar/iShortener.git
     ```
 
-3.  Navigate to the project directory:
+2.  Navigate to the project directory:
     ```bash
     cd iShortener
     ```
 
-5.  Install dependencies:
+3.  Install dependencies:
     ``` bash
     npm install
       # or
     yarn install
+    ```
+
+4. Create a `.env.local` file in the `root` directory
+
+5. Get your [Access Token](https://app.bitly.com/settings/api/)
+
+6. Your `.env.local` file should look like this:
+    ```bash
+    ACCESS_TOKEN = "YOUR_ACCESS_TOKEN_HERE"
     ```
 
 7.  Start the development server:
@@ -46,7 +55,7 @@ To run the iShortener project locally, follow these steps:
     yarn dev
     ```
 
-9.  Open your browser and visit `http://localhost:3000` to access iShortener.
+8.  Open your browser and visit `http://localhost:3000` to access iShortener.
 
 ## Contributing
 
