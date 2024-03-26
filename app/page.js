@@ -51,7 +51,7 @@ export default function Home() {
         </h1>
       </div>
       <div className="details lg:w-[70%] w-[90%] p-8 my-5">
-        <p className="text-xl text-gray-300">
+        <p className="text-xl text-gray-600 dark:text-gray-300">
           The best app on the internet to shorten your big links. Get a short
           link and be productive!
         </p>
@@ -103,20 +103,21 @@ export default function Home() {
           </div>
         }
         {shortenedLink &&
-          <div id="shortened-link" className="border-2 rounded-lg border-zinc-700 bg-zinc-700 lg:w-[85%] w-full my-4 px-5 py-7 font-semibold text-lg flex justify-between items-center mb-16">
+          <div id="shortened-link" className="border-2 rounded-lg bg-slate-200 dark:border-zinc-700 dark:bg-zinc-700 lg:w-[85%] w-full my-4 px-5 py-7 font-semibold text-lg flex justify-between items-center mb-16">
             <div>
               <span className="font-normal">Shortened Link :- </span>
               <Link href={shortenedLink} target="_blank" className="text-blue-500 hover:text-blue-600 transition-all">
                 {shortenedLink}
               </Link>
             </div>
-            <button onClick={handleLinkCopy} className="border-2 rounded-2xl border-zinc-700 bg-zinc-800 hover:bg-zinc-600 transition-all p-3">
+            <button onClick={handleLinkCopy} className="border-2 rounded-2xl bg-zinc-300 hover:bg-zinc-400 dark:border-zinc-700 dark:bg-zinc-800 dark:hover:bg-zinc-600 transition-all p-3">
               <Image
                 src="/copy.svg"
                 width={25}
                 height={25}
                 alt="cancel"
                 id="copy-img"
+                className="dark:invert-0 invert"
               />
             </button>
           </div>

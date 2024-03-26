@@ -3,11 +3,11 @@ import Link from "next/link";
 const About = () => {
   return (
     <>
-      <div className="py-8 text-zinc-100">
+      <div className="py-8 dark:text-zinc-100">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center mb-8">
             <h2 className="text-4xl font-bold my-4 mt-0">About iShortener</h2>
-            <p className="text-lg text-gray-400">
+            <p className="text-lg dark:text-gray-400 text-gray-600">
               iShortener is a fast, reliable, and secure URL shortening service designed to make sharing links easier and more efficient.
             </p>
           </div>
@@ -23,15 +23,23 @@ const About = () => {
             </p>
             <p className="mx-3 my-4">
               iShortener is an open-source project created by&nbsp;
-              <Link href="https://github.com/arnavnagpurkar" passHref>
-                <a className="text-blue-500 hover:text-blue-400 transition-all" target="_blank">Arnav Nagpurkar</a>
+              <Link
+                href="https://github.com/arnavnagpurkar"
+                className="text-blue-500 hover:text-blue-400 transition-all"
+                target="_blank"
+              >
+                Arnav Nagpurkar
               </Link>.
               It is built using Next.js and Tailwind CSS, leveraging the power of modern web technologies to provide a seamless and efficient URL shortening experience.
             </p>
             <p className="mx-3 my-4">
               You can contribute to its development or report issues on&nbsp;
-              <Link href="https://github.com/arnavnagpurkar/iShortener" passHref>
-                <a className="text-blue-500 hover:text-blue-400 transition-all" target="_blank">GitHub</a>
+              <Link
+                href="https://github.com/arnavnagpurkar/iShortener"
+                className="text-blue-500 hover:text-blue-400 transition-all"
+                target="_blank"
+              >
+                GitHub
               </Link>.
             </p>
             <p className="mx-3 my-4">

@@ -8,7 +8,7 @@ export  const FeaturesPage = () => {
           <h2 className="text-4xl font-bold my-4 mt-0">
             Features of iShortener
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-lg dark:text-gray-300 text-gray-600">
             Discover the amazing features of iShortener that make URL
             shortening a breeze.
           </p>

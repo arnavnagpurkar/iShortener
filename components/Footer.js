@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Footer = () => {
   return (
-    <footer className="lg:w-3/4 mx-auto bg-zinc-900 rounded-lg py-5 px-8">
+    <footer className="lg:w-3/4 mx-auto rounded-lg py-5 px-8">
       <div className="footer flex justify-between items-center">
         <div className="logo lg:text-2xl text-md font-medium">
           <Link href="/">iShortener</Link>
@@ -19,7 +19,7 @@ const Footer = () => {
                 width={25}
                 height={25}
                 alt="github"
-                className="hover:opacity-70 transition-all"
+                className="hover:opacity-70 transition-all dark:invert-0 invert"
               />
             </Link>
           </li>
